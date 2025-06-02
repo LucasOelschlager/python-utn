@@ -3,11 +3,11 @@ asignatura = []
 
 
 
-
-
-
 '''
 EJERCICIO 1
+
+Escribir un programa que almacene las asignaturas de un curso (por ejemplo Matemáticas,
+Física, Química, Historia y Lengua) en una lista y la muestre por pantalla.
 
 while True:
         asignaturas.append(input('INGRESE LA ASIGNATURA: \n'))
@@ -26,6 +26,9 @@ print(asignaturas)
 
 '''
 EJERCICIO 2
+Escribir un programa que almacene las asignaturas de un curso (por ejemplo Matemáticas,
+Física, Química, Historia y Lengua) en una lista y la muestre por pantalla el mensaje Yo
+estudio <asignatura>, donde <asignatura> es cada una de las asignaturas de la lista.
 
 
 while True:
@@ -49,7 +52,12 @@ for asignatura in asignaturas:
 
 '''
 EJERCICIO 3L
-'''
+Escribir un programa que almacene las asignaturas de un curso (por ejemplo:
+Matemáticas, Física, Química, Historia y Lengua) en una lista, pregunte al usuario la nota
+que ha sacado en cada asignatura, y después las muestre por pantalla con el mensaje En
+<asignatura> has sacado <nota> donde <asignatura> es cada una de las asignaturas de
+la lista y <nota> cada una de las correspondientes notas introducidas por el usuario.
+
 
 while True: 
         materia = input('Ingrese la asignatura \n')
@@ -65,10 +73,27 @@ while True:
                 print('Cargando notas... \n')
                 break
 
-
 for asignatura in asignaturas:
-        print(f'Materia: {asignatura['Materia']}, Nota: {asignatura['Nota']}')
-                
+        print(f'Materia: {asignatura['Materia']}, Nota: {asignatura['Nota']}')              
+'''
+
+'''
+EJERCICIO 4
+Escribir un programa que almacene en una lista los números del 1 al 10 y los muestre por
+pantalla en orden inverso separados por comas.
+numeros: list =[]
+for num  in range (1, 11):
+    numeros.append(num)
+numeros.reverse()
+print(", ".join(str(n) for n in numeros))
+    
+'''
+
+
+
+
+
+
 
 
 
