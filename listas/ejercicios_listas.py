@@ -5,6 +5,7 @@ asignatura = []
 
 
 
+
 '''
 EJERCICIO 1
 
@@ -49,5 +50,26 @@ for asignatura in asignaturas:
 '''
 EJERCICIO 3L
 '''
+
+while True: 
+        materia = input('Ingrese la asignatura \n')
+        nota = float(input(f'Ingrese la nota de {materia} \n'))
+        asignaturas.append({"Materia": materia, "Nota": nota})
+        while True:
+                option = input('¿Quiere ingresar otra asignatura? (S/N)')
+                if option.lower() == 'n' or option.lower() == 's':
+                        break
+                else:
+                        continue
+        if option.lower() == 'n':
+                print('Cargando notas... \n')
+                break
+
+
+for asignatura in asignaturas:
+        print(f'Materia: {asignatura['Materia']}, Nota: {asignatura['Nota']}')
+                
+
+
 
 
