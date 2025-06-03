@@ -130,6 +130,64 @@ for materia_desaprobada in repetir:
 '''
 
 
+'''
+EJERCICIO 6
+Escribir un programa que almacene el abecedario en una lista, elimine de la lista las letras
+que ocupen posiciones múltiplos de 3, y muestre por pantalla la lista resultante.
+abecedario: list = [
+        'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+        'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+]
+
+
+
+for letra in abecedario:
+    if (abecedario.index(letra) + 1) % 3 == 0:
+       abecedario.remove(letra)
+print(abecedario)
+
+
+'''
+
+'''
+EJERCICIO 7
+Escribir un programa que almacene en una lista los siguientes precios, 50, 75, 46, 22, 80,
+65, 8, y muestre por pantalla el menor y el mayor de los precios.
+
+precios =[50, 75, 46, 22, 80, 65, 8]
+aux: int = precios[0]
+for precio in precios:
+        if precio < aux:
+                aux = precio
+        else:
+                continue
+print(f'El precio  mas bajo es {aux}' )
+for precio in precios:
+        if precio > aux:
+                aux = precio
+        else: 
+                continue
+print(f'El precio mas alto es {aux}')
+
+OTRA FORMA MAS FACIL
+
+print('El precio mas bajo es: ', min(precios))
+print('El precio mas alto es: ', max(precios))
+
+'''
+
+
+
+
+
+
+
+    
+    
+  
+    
+
+
 
 
                 
