@@ -86,8 +86,60 @@ for num  in range (1, 11):
     numeros.append(num)
 numeros.reverse()
 print(", ".join(str(n) for n in numeros))
-    
 '''
+
+
+'''
+EJERCICIO 5
+Escribir un programa que almacene las asignaturas de un curso (por ejemplo:
+Matemáticas, Física, Química, Historia y Lengua) en una lista, pregunte al usuario la nota
+que ha sacado en cada asignatura y elimine de la lista las asignaturas aprobadas. Al final el
+programa debe mostrar por pantalla las asignaturas que el usuario tiene que repetir.
+
+repetir = []
+while True:
+        materia_nombre = input('INGRESE UNA ASIGNATURA: ')
+        while True:
+                try:
+                        nota = float(input(f'Ingrese la nota de {materia_nombre} '))
+                        if nota < 0 or nota > 10:
+                                print('Ingrese una nota valida (0-10)')
+                                continue
+                        elif nota < 6: 
+                                repetir.append((materia_nombre, nota))
+                                break
+                        else:
+                                asignatura.append((materia_nombre, nota))
+                                break
+                except ValueError:
+                        print('Ingrese un número válido')
+        option = input('Desea añadir otra asignatura? (S/N) ')
+        if(option.lower() == 'n'):
+                break
+        else: 
+                continue
+
+print('Materias aprobadas ')
+for materia in asignatura:
+        print(f'Materia: {materia_nombre}\n Nota: {nota}')
+print('Materias desaprobadas')
+for materia_desaprobada in repetir:
+        print(f'Materia: {materia_nombre}\n Nota: {nota}')
+
+
+'''
+
+
+
+
+                
+
+
+
+          
+
+
+
 
 
 
